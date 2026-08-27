@@ -1,0 +1,89 @@
+.contact-container{
+    max-width:800px;
+    margin:40px auto;
+    padding:30px;
+    background:#ffffff;
+    border-radius:10px;
+    box-shadow:0 0 10px rgba(0,0,0,0.15);
+    font-family:Arial, sans-serif;
+}
+
+h1{
+    text-align:center;
+    color:#0d6efd;
+}
+
+.subtitle{
+    text-align:center;
+    color:#555;
+    margin-bottom:25px;
+}
+
+.contact-info{
+    margin-bottom:25px;
+}
+
+.contact-info h2{
+    color:#0d6efd;
+    margin-bottom:15px;
+}
+
+.contact-info p{
+    font-size:17px;
+    margin:12px 0;
+    line-height:1.6;
+}
+
+/* GitHub Link */
+.contact-info a{
+    color:#0d6efd;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.contact-info a:hover{
+    color:#084298;
+    text-decoration:underline;
+}
+
+hr{
+    margin:25px 0;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+}
+
+input,
+textarea{
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    font-size:16px;
+    outline:none;
+}
+
+input:focus,
+textarea:focus{
+    border-color:#0d6efd;
+    box-shadow:0 0 5px rgba(13,110,253,0.4);
+}
+
+button{
+    padding:12px;
+    background:#0d6efd;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:16px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    background:#084298;
+    transform:scale(1.02);
+}

@@ -1,0 +1,35 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 30px;
+  background-color: #333;
+  color: white;
+}
+
+.nav-img {
+  height: 40px; 
+  width: 40px; 
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+  margin: 0; /* Extra margin hatane ke liye */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  /* Ye line cursor ko hand nahi banne degi, matlab non-clickable feel aayega */
+  cursor: default; 
+}
+
+/* Hover effect ko hata rahe hain taaki link na lage */
+.nav-links a:hover {
+  color: white; 
+}

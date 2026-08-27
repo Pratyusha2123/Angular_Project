@@ -1,0 +1,13 @@
+body{
+    background-color:#FFE5D9;
+    font-family:Arial, sans-serif;
+}
+
+.container{
+    width:350px;
+    margin:80px auto;
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,0.2);
+}

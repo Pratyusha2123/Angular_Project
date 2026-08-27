@@ -1,0 +1,13 @@
+.footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: auto; /* Agar aap flexbox layout use kar rahe hain */
+  width: 100%;
+}
+
+.footer-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
