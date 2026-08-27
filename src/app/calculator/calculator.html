@@ -1,0 +1,33 @@
+<div class="calculator">
+  <!-- Display Screen -->
+  <div class="display">
+    <span>{{ displayValue }}</span>
+  </div>
+
+  <!-- Keypad Buttons -->
+  <div class="buttons">
+    <button (click)="clear()">clr</button>
+    <button (click)="delete()">DEL</button>
+    <button (click)="appendOp('%')">%</button>
+    <button (click)="appendOp('/')">/</button>
+
+    <button (click)="appendNum('7')">7</button>
+    <button (click)="appendNum('8')">8</button>
+    <button (click)="appendNum('9')">9</button>
+    <button (click)="appendOp('*')">*</button>
+
+    <button (click)="appendNum('4')">4</button>
+    <button (click)="appendNum('5')">5</button>
+    <button (click)="appendNum('6')">6</button>
+    <button (click)="appendOp('-')">-</button>
+
+    <button (click)="appendNum('1')">1</button>
+    <button (click)="appendNum('2')">2</button>
+    <button (click)="appendNum('3')">3</button>
+    <button (click)="appendOp('+')">+</button>
+
+    <button (click)="appendNum('.')">.</button>
+    <button (click)="appendNum('0')">0</button>
+    <button class="btn-equal" (click)="calculate()">=</button>
+  </div>
+</div>
