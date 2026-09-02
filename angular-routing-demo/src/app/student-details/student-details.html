@@ -1,0 +1,103 @@
+<div class="details-container">
+
+  <div class="details-box">
+
+    <h1>Student Details</h1>
+
+    @if (student) {
+
+      <!-- Photo -->
+      <div class="photo-section">
+
+        <img
+          [src]="student.photo"
+          alt="Student Photo"
+        >
+
+      </div>
+
+
+      <!-- Name -->
+      <div class="detail">
+        <span>Name</span>
+        <p>{{ student.name }}</p>
+      </div>
+
+
+      <!-- Registration Number -->
+      <div class="detail">
+        <span>Registration No.</span>
+        <p>{{ student.regNo }}</p>
+      </div>
+
+
+      <!-- Department -->
+      <div class="detail">
+        <span>Department</span>
+        <p>{{ student.department }}</p>
+      </div>
+
+
+      <!-- Blood Group -->
+      <div class="detail">
+        <span>Blood Group</span>
+        <p>{{ student.bloodGroup }}</p>
+      </div>
+
+
+      <!-- Email -->
+      <div class="detail">
+        <span>Email</span>
+        <p>{{ student.email }}</p>
+      </div>
+
+
+      <!-- Phone -->
+      <div class="detail">
+        <span>Phone Number</span>
+        <p>{{ student.phone }}</p>
+      </div>
+
+
+      <!-- Date of Birth -->
+      <div class="detail">
+        <span>Date of Birth</span>
+        <p>{{ student.dob }}</p>
+      </div>
+
+
+      <!-- Gender -->
+      <div class="detail">
+        <span>Gender</span>
+        <p>{{ student.gender }}</p>
+      </div>
+
+
+      <!-- Address -->
+      <div class="detail">
+        <span>Address</span>
+        <p>{{ student.address }}</p>
+      </div>
+
+
+      <button (click)="goBack()">
+        Back to Registration
+      </button>
+
+    }
+
+    @else {
+
+      <p class="no-data">
+        No student details found.
+      </p>
+
+      <button (click)="goBack()">
+        Go to Registration
+      </button>
+
+    }
+
+  </div>
+
+</div>
