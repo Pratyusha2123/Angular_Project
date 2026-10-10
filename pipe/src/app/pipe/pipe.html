@@ -1,0 +1,47 @@
+<h2>Welcome</h2>
+
+<h3>Merge First Name and Last Name</h3>
+
+<input type="text" [(ngModel)]="firstName" placeholder="First Name">
+
+<input type="text" [(ngModel)]="lastName" placeholder="Last Name">
+
+<button (click)="submit()">Submit</button>
+
+<div *ngIf="submitted">
+  <p>
+    Name: {{ firstName | mergeName:lastName | lowercase }}
+  </p>
+</div>
+
+<hr>
+<h3>Sort Array</h3>
+<input
+  type="text"
+  [(ngModel)]="numberInput"
+  placeholder="Enter numbers">
+
+<button (click)="sortNumbers()">Sort</button>
+
+<p>Original Array: {{ numbers }}</p>
+
+<p>Sorted Array: {{ numbers | sort }}</p>
+
+<hr>
+
+<h3>Math Operations</h3>
+<input
+  type="number"
+  [(ngModel)]="num1"
+  placeholder="Enter first number">
+
+<input
+  type="number"
+  [(ngModel)]="num2"
+  placeholder="Enter second number">
+
+<p>Addition: {{ num1 | math:num2:'add' }}</p>
+
+<p>Multiplication: {{ num1 | math:num2:'multiply' }}</p>
+
+<p>Division: {{ num1 | math:num2:'divide' }}</p> 
